@@ -1,0 +1,1335 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Conoce la importancia de la farmacovigilancia, su historia, regulación y papel en la seguridad de los pacientes."
+    />
+
+    <title>Farmacovigilancia | IPN</title>
+
+    <link rel="shortcut icon" href="assets/ipn-logo.png" type="image/png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- JavaScript -->
+    <script src="scripts/main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- ========================================
+       HEADER INSTITUCIONAL
+  ========================================= -->
+    <header class="header">
+      <div class="header__container">
+        <!-- Identidad institucional -->
+        <a href="#inicio" class="header__brand" aria-label="Ir al inicio">
+          <div class="header__logo">
+            <img
+              src="assets/ipn-logo.png"
+              alt="Escudo del Instituto Politécnico Nacional"
+            />
+          </div>
+
+          <div class="header__identity">
+            <span class="header__institution">
+              Instituto Politécnico Nacional
+            </span>
+
+            <span class="header__campus"> CICS Unidad Milpa Alta </span>
+
+            <span class="header__project"> Equipo 5 </span>
+          </div>
+        </a>
+
+        <!-- Navegación principal -->
+        <nav class="nav" id="nav" aria-label="Navegación principal">
+          <ul class="nav__list">
+            <li>
+              <a href="#inicio" class="nav__link nav__link--active"> Inicio </a>
+            </li>
+
+            <li>
+              <a href="#definicion" class="nav__link"> ¿Qué es? </a>
+            </li>
+
+            <li>
+              <a href="#historia" class="nav__link"> Historia </a>
+            </li>
+
+            <li>
+              <a href="#cofepris" class="nav__link"> COFEPRIS </a>
+            </li>
+
+            <li>
+              <a href="#normatividad" class="nav__link"> Normatividad </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Botón menú móvil -->
+        <button
+          class="header__toggle"
+          id="menu-toggle"
+          type="button"
+          aria-label="Abrir menú de navegación"
+          aria-controls="nav"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ========================================
+       CONTENIDO PRINCIPAL
+  ========================================= -->
+    <main id="inicio">
+      <!-- ======================================
+         HERO
+    ======================================= -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__container">
+          <!-- Contenido textual -->
+          <div class="hero__content">
+            <div class="hero__badge">
+              <span class="hero__badge-dot"></span>
+              Educación para la salud
+            </div>
+
+            <h1 class="hero__title" id="hero-title">
+              Farmaco<span>vigilancia</span>
+            </h1>
+
+            <h2 class="hero__subtitle">
+              La seguridad del paciente comienza con la información.
+            </h2>
+
+            <p class="hero__description">
+              La farmacovigilancia permite detectar, evaluar, comprender y
+              prevenir los efectos adversos y otros problemas relacionados con
+              la seguridad de los medicamentos y las vacunas.
+            </p>
+
+            <div class="hero__actions">
+              <a href="#definicion" class="btn btn--primary">
+                Explorar el tema
+                <span aria-hidden="true">→</span>
+              </a>
+
+              <a href="#historia" class="btn btn--outline">
+                Conocer su historia
+              </a>
+            </div>
+
+            <div class="hero__footer">
+              <span class="hero__footer-line"></span>
+              <p>
+                Instituto Politécnico Nacional
+                <span>·</span>
+                CICS Unidad Milpa Alta
+              </p>
+            </div>
+          </div>
+
+          <!-- Imagen principal -->
+          <div class="hero__visual">
+            <div class="hero__image-wrapper">
+              <img
+                src="assets/hero.jpeg"
+                alt="Medicamentos observados a través de una lupa"
+                class="hero__image"
+                fetchpriority="high"
+              />
+            </div>
+
+            <!-- Tarjeta flotante -->
+            <div class="hero__floating-card">
+              <div class="hero__floating-icon" aria-hidden="true">+</div>
+
+              <div class="hero__floating-text">
+                <strong>Seguridad del paciente</strong>
+                <span>Prevención y vigilancia</span>
+              </div>
+            </div>
+
+            <!-- Elementos decorativos -->
+            <div class="hero__decoration hero__decoration--one"></div>
+            <div class="hero__decoration hero__decoration--two"></div>
+          </div>
+        </div>
+
+        <!-- Indicador inferior -->
+        <a
+          href="#definicion"
+          class="hero__scroll"
+          aria-label="Desplazarse a la siguiente sección"
+        >
+          <span>Descubre más</span>
+          <span class="hero__scroll-arrow" aria-hidden="true">↓</span>
+        </a>
+      </section>
+
+      <!-- ========================================
+          SECCIÓN 01: DEFINICIÓN
+      ========================================= -->
+      <section
+        class="definition section"
+        id="definicion"
+        aria-labelledby="definition-title"
+      >
+        <div class="definition__container">
+          <!-- Encabezado -->
+          <div class="definition__heading">
+            <span class="section__eyebrow">
+              <span class="section__eyebrow-line"></span>
+              01 / Conceptos fundamentales
+            </span>
+
+            <h2 class="section__title" id="definition-title">
+              ¿Qué es la
+              <span>farmacovigilancia?</span>
+            </h2>
+
+            <p class="section__description">
+              La seguridad de los medicamentos y las vacunas continúa siendo
+              importante incluso después de su comercialización.
+            </p>
+          </div>
+
+          <!-- Definición principal -->
+          <div class="definition__intro">
+            <div class="definition__intro-icon" aria-hidden="true">
+              <span>+</span>
+            </div>
+
+            <div class="definition__intro-content">
+              <span class="definition__intro-label"> DEFINICIÓN </span>
+
+              <p>
+                La <strong>farmacovigilancia</strong> consiste en detectar,
+                evaluar, comprender y prevenir los efectos adversos o cualquier
+                problema de seguridad derivado del uso de
+                <strong>medicamentos y vacunas</strong>
+                una vez que ya se comercializan.
+              </p>
+            </div>
+          </div>
+
+          <!-- Cuatro pilares -->
+          <div class="definition__grid">
+            <!-- Detectar -->
+            <article class="definition__card">
+              <div class="definition__card-number">01</div>
+
+              <div class="definition__card-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="11" cy="11" r="7"></circle>
+                  <path d="m20 20-4-4"></path>
+                </svg>
+              </div>
+
+              <h3>Detectar</h3>
+
+              <p>
+                Identificar posibles efectos adversos y problemas relacionados
+                con la seguridad de los medicamentos.
+              </p>
+            </article>
+
+            <!-- Evaluar -->
+            <article class="definition__card">
+              <div class="definition__card-number">02</div>
+
+              <div class="definition__card-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="5" y="4" width="14" height="17" rx="2"></rect>
+                  <path d="M9 4.5h6"></path>
+                  <path d="m9 13 2 2 4-4"></path>
+                </svg>
+              </div>
+
+              <h3>Evaluar</h3>
+
+              <p>
+                Analizar la información disponible para valorar los posibles
+                riesgos asociados con su utilización.
+              </p>
+            </article>
+
+            <!-- Comprender -->
+            <article class="definition__card">
+              <div class="definition__card-number">03</div>
+
+              <div class="definition__card-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="9"></circle>
+                  <path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 2-2.5 2-2.5 4"></path>
+                  <path d="M12 17h.01"></path>
+                </svg>
+              </div>
+
+              <h3>Comprender</h3>
+
+              <p>
+                Estudiar los efectos identificados para conocer mejor los
+                problemas de seguridad relacionados.
+              </p>
+            </article>
+
+            <!-- Prevenir -->
+            <article class="definition__card">
+              <div class="definition__card-number">04</div>
+
+              <div class="definition__card-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+              </div>
+
+              <h3>Prevenir</h3>
+
+              <p>
+                Contribuir a reducir riesgos mediante la identificación y
+                vigilancia de problemas de seguridad.
+              </p>
+            </article>
+          </div>
+
+          <!-- Fuente oficial -->
+          <div class="definition__source">
+            <div class="definition__source-content">
+              <span class="definition__source-icon" aria-hidden="true">
+                ↗
+              </span>
+
+              <div>
+                <strong>¿Quieres conocer más?</strong>
+
+                <p>
+                  Consulta la información oficial sobre farmacovigilancia en
+                  México.
+                </p>
+              </div>
+            </div>
+
+            <a
+              href="https://www.gob.mx/cofepris/acciones-y-programas/farmacovigilancia-73541"
+              class="definition__source-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Consultar COFEPRIS
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================
+     SECCIÓN 02: HISTORIA
+========================================= -->
+      <section
+        class="history section"
+        id="historia"
+        aria-labelledby="history-title"
+      >
+        <div class="history__container">
+          <!-- Encabezado -->
+          <div class="history__heading">
+            <span class="section__eyebrow">
+              <span class="section__eyebrow-line"></span>
+              02 / Historia y evolución
+            </span>
+
+            <h2 class="section__title" id="history-title">
+              Una historia de
+              <span>vigilancia y prevención</span>
+            </h2>
+
+            <p class="section__description">
+              La farmacovigilancia surgió de la necesidad de identificar riesgos
+              que no siempre podían detectarse durante las pruebas clínicas
+              previas a la comercialización.
+            </p>
+          </div>
+
+          <!-- =====================================
+         CONTEXTO INTERNACIONAL
+    ====================================== -->
+          <div class="history__international">
+            <div class="history__international-heading">
+              <div class="history__international-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="9"></circle>
+                  <path d="M3 12h18"></path>
+                  <path d="M12 3a15 15 0 0 1 0 18"></path>
+                  <path d="M12 3a15 15 0 0 0 0 18"></path>
+                </svg>
+              </div>
+
+              <div>
+                <span class="history__label"> ANTECEDENTES </span>
+                <h3>El origen internacional</h3>
+              </div>
+            </div>
+
+            <div class="history__international-grid">
+              <!-- Antecedentes -->
+              <article class="history__international-card">
+                <span class="history__date"> SIGLO XX </span>
+
+                <h4>Las primeras alertas sanitarias</h4>
+
+                <p>
+                  Durante el siglo XX, las pruebas clínicas previas no bastaban
+                  para prever todos los riesgos asociados con los medicamentos.
+                </p>
+
+                <p>
+                  Crisis sanitarias como las intoxicaciones por sulfanilamidas
+                  en los años treinta y las reacciones severas al practolol
+                  evidenciaron la necesidad de vigilar los fármacos en la
+                  población general.
+                </p>
+              </article>
+
+              <!-- OMS -->
+              <article class="history__international-card">
+                <span class="history__date"> 1968 </span>
+
+                <h4>Un esfuerzo mundial</h4>
+
+                <p>
+                  La Organización Mundial de la Salud (OMS) fundó el Programa
+                  Internacional de Monitoreo de Medicamentos.
+                </p>
+
+                <p>
+                  Actualmente gestionado por el Centro de Monitoreo de Uppsala,
+                  este programa reúne reportes de numerosos países para
+                  identificar señales de alerta temprana y contribuir a la
+                  protección de los pacientes.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <!-- =====================================
+         EVOLUCIÓN EN MÉXICO
+    ====================================== -->
+          <div class="history__mexico">
+            <div class="history__mexico-heading">
+              <span class="history__label"> DESARROLLO NACIONAL </span>
+
+              <h3>
+                Evolución de la farmacovigilancia
+                <span>en México</span>
+              </h3>
+
+              <p>
+                Conoce los acontecimientos que marcaron el desarrollo de la
+                vigilancia de medicamentos en nuestro país.
+              </p>
+            </div>
+
+            <!-- Línea del tiempo -->
+            <div class="timeline">
+              <!-- 1989 -->
+              <article class="timeline__item">
+                <div class="timeline__marker" aria-hidden="true">
+                  <span></span>
+                </div>
+
+                <div class="timeline__card">
+                  <span class="timeline__year"> 1989 </span>
+
+                  <h4>Inicio de los reportes voluntarios</h4>
+
+                  <p>
+                    Comienza el reporte voluntario de reacciones adversas a
+                    medicamentos, impulsado inicialmente por la industria
+                    farmacéutica.
+                  </p>
+                </div>
+              </article>
+
+              <!-- 1995 - 2000 -->
+              <article class="timeline__item">
+                <div class="timeline__marker" aria-hidden="true">
+                  <span></span>
+                </div>
+
+                <div class="timeline__card">
+                  <span class="timeline__year"> 1995 – 2000 </span>
+
+                  <h4>Formalización de la farmacovigilancia</h4>
+
+                  <p>
+                    La Secretaría de Salud formaliza esta actividad como una
+                    prioridad sanitaria y crea el Centro Nacional de
+                    Farmacovigilancia (CNFV).
+                  </p>
+                </div>
+              </article>
+
+              <!-- 1999 - 2001 -->
+              <article class="timeline__item">
+                <div class="timeline__marker" aria-hidden="true">
+                  <span></span>
+                </div>
+
+                <div class="timeline__card">
+                  <span class="timeline__year"> 1999 – 2001 </span>
+
+                  <h4>Integración internacional y COFEPRIS</h4>
+
+                  <p>
+                    México se incorpora oficialmente al programa global de la
+                    OMS en 1999.
+                  </p>
+
+                  <p>
+                    Tras la creación de la COFEPRIS en 2001, el CNFV pasa a
+                    formar parte de su estructura técnica y de manejo de
+                    riesgos.
+                  </p>
+                </div>
+              </article>
+
+              <!-- 2026 -->
+              <article class="timeline__item timeline__item--featured">
+                <div class="timeline__marker" aria-hidden="true">
+                  <span></span>
+                </div>
+
+                <div class="timeline__card">
+                  <span class="timeline__year"> 2026 </span>
+
+                  <span class="timeline__tag"> Evolución institucional </span>
+
+                  <h4>Farmacovigilancia y tecnovigilancia</h4>
+
+                  <p>
+                    De acuerdo con el material académico, las reformas a la Ley
+                    General de Salud publicadas en enero de 2026 impulsan la
+                    evolución hacia el Centro Nacional de Farmacovigilancia y
+                    Tecnovigilancia (CENAFyT).
+                  </p>
+
+                  <p>
+                    El objetivo descrito es integrar y reforzar la supervisión
+                    tanto de medicamentos como de dispositivos médicos.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Mensaje de cierre -->
+          <div class="history__closing">
+            <div class="history__closing-icon" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+            </div>
+
+            <p>
+              La farmacovigilancia continúa evolucionando para fortalecer la
+              identificación de riesgos y contribuir a la
+              <strong>seguridad de los pacientes.</strong>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================
+          SECCIÓN 03: COFEPRIS
+      ========================================= -->
+      <section
+        class="cofepris section"
+        id="cofepris"
+        aria-labelledby="cofepris-title"
+      >
+        <div class="cofepris__container">
+          <!-- Encabezado -->
+          <div class="cofepris__heading">
+            <span class="section__eyebrow">
+              <span class="section__eyebrow-line"></span>
+              03 / Autoridad sanitaria
+            </span>
+
+            <h2 class="section__title" id="cofepris-title">
+              Conoce a la
+              <span>COFEPRIS</span>
+            </h2>
+
+            <p class="section__description">
+              La institución encargada de proteger a la población mexicana
+              frente a diversos riesgos sanitarios.
+            </p>
+          </div>
+
+          <!-- Presentación institucional -->
+          <div class="cofepris__overview">
+            <div class="cofepris__content">
+              <span class="cofepris__label">
+                AUTORIDAD SANITARIA EN MÉXICO
+              </span>
+
+              <h3>
+                Comisión Federal para la Protección contra Riesgos Sanitarios
+              </h3>
+
+              <p>
+                La <strong>COFEPRIS</strong> es un órgano administrativo
+                desconcentrado de la Secretaría de Salud, con autonomía técnica,
+                administrativa y operativa.
+              </p>
+
+              <p>
+                Fue creada el
+                <strong>5 de julio de 2001</strong>
+                mediante un decreto publicado en el Diario Oficial de la
+                Federación.
+              </p>
+
+              <p>
+                Su función es proteger a la población mexicana contra los
+                riesgos sanitarios derivados del uso y consumo de bienes y
+                servicios, los insumos para la salud, la exposición a factores
+                ambientales y laborales, la prestación de servicios de salud y
+                las emergencias sanitarias.
+              </p>
+            </div>
+
+            <!-- Panel destacado -->
+            <aside class="cofepris__highlight">
+              <div class="cofepris__highlight-symbol" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+              </div>
+
+              <span class="cofepris__highlight-label">
+                MISIÓN DE PROTECCIÓN
+              </span>
+
+              <h3>Proteger la salud de la población</h3>
+
+              <p>
+                Mediante la regulación, el control y el fomento sanitario frente
+                a riesgos asociados con productos, servicios y factores
+                ambientales.
+              </p>
+
+              <div class="cofepris__highlight-bottom">
+                <span>2001</span>
+                <small>Año de creación</small>
+              </div>
+            </aside>
+          </div>
+
+          <!-- Fundamento jurídico -->
+          <div class="cofepris__legal">
+            <div class="cofepris__legal-icon" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 21h16" />
+                <path d="M6 21V7l6-4 6 4v14" />
+                <path d="M9 10h6" />
+                <path d="M9 14h6" />
+                <path d="M9 18h6" />
+              </svg>
+            </div>
+
+            <div class="cofepris__legal-content">
+              <span>FUNDAMENTO JURÍDICO</span>
+              <h3>Ley General de Salud</h3>
+              <p>
+                Las atribuciones y funciones de la COFEPRIS se establecen en los
+                artículos
+                <strong
+                  >17 bis, 17 bis 1, 17 bis 2, 313 fracción I y 340</strong
+                >
+                de la Ley General de Salud.
+              </p>
+            </div>
+          </div>
+
+          <!-- Figura de áreas de intervención -->
+          <div class="cofepris__areas">
+            <div class="cofepris__areas-heading">
+              <span class="cofepris__label"> CAMPOS DE ACTUACIÓN </span>
+
+              <h3>Áreas de intervención sanitaria</h3>
+
+              <p>
+                La COFEPRIS interviene en distintos ámbitos relacionados con la
+                producción, comercialización, importación, exportación,
+                publicidad y exposición a productos y factores de riesgo.
+              </p>
+            </div>
+
+            <figure class="cofepris__figure">
+              <div
+                class="cofepris__figure-scroll"
+                tabindex="0"
+                role="region"
+                aria-label="Tabla de áreas de intervención sanitaria de COFEPRIS"
+              >
+                <img
+                  src="assets/cofepris.png"
+                  alt="Clasificación de seis áreas de intervención de COFEPRIS: medicamentos y tecnologías para la salud; sustancias tóxicas o peligrosas; productos y servicios; salud en el trabajo; saneamiento básico; y riesgos derivados de factores ambientales."
+                  loading="lazy"
+                />
+              </div>
+
+              <figcaption>
+                <strong>Figura 1.</strong>
+                Clasificación de las áreas de intervención sanitaria de la
+                COFEPRIS.
+              </figcaption>
+            </figure>
+
+            <p class="cofepris__mobile-hint">
+              Desliza horizontalmente la imagen para consultar todas las
+              columnas.
+            </p>
+          </div>
+
+          <!-- Enlaces oficiales -->
+          <div class="cofepris__resources">
+            <div class="cofepris__resources-heading">
+              <span class="cofepris__label"> FUENTES DE CONSULTA </span>
+              <h3>Explora la información oficial</h3>
+              <p>
+                Consulta las regulaciones sanitarias, los procesos de vigilancia
+                y las actividades de farmacovigilancia.
+              </p>
+            </div>
+
+            <div class="cofepris__resources-grid">
+              <a
+                href="https://www.gob.mx/cofepris"
+                class="cofepris__resource"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="cofepris__resource-type">
+                  PORTAL INSTITUCIONAL
+                </span>
+
+                <strong>COFEPRIS</strong>
+
+                <span class="cofepris__resource-description">
+                  Comisión Federal para la Protección contra Riesgos Sanitarios.
+                </span>
+
+                <span class="cofepris__resource-action">
+                  Visitar sitio oficial
+                  <span aria-hidden="true">↗</span>
+                </span>
+              </a>
+
+              <a
+                href="https://www.gob.mx/cofepris/acciones-y-programas/farmacovigilancia-73541"
+                class="cofepris__resource"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="cofepris__resource-type">
+                  INFORMACIÓN ESPECIALIZADA
+                </span>
+
+                <strong>Farmacovigilancia en México</strong>
+
+                <span class="cofepris__resource-description">
+                  Información institucional sobre la vigilancia de la seguridad
+                  de los medicamentos.
+                </span>
+
+                <span class="cofepris__resource-action">
+                  Consultar información
+                  <span aria-hidden="true">↗</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================
+     SECCIÓN 04: NORMATIVIDAD
+========================================= -->
+      <section
+        class="normativity section"
+        id="normatividad"
+        aria-labelledby="normativity-title"
+      >
+        <div class="normativity__container">
+          <!-- ENCABEZADO -->
+          <div class="normativity__heading">
+            <span class="section__eyebrow">
+              <span class="section__eyebrow-line"></span>
+              04 / Normatividad y seguridad
+            </span>
+
+            <h2 class="section__title" id="normativity-title">
+              Normatividad y
+              <span>farmacovigilancia</span>
+            </h2>
+
+            <p class="section__description">
+              Conoce las disposiciones que regulan la farmacovigilancia en
+              México y los conceptos esenciales para identificar problemas de
+              seguridad.
+            </p>
+          </div>
+
+          <!-- NORMA OFICIAL -->
+          <article class="normativity__law">
+            <div class="normativity__law-content">
+              <span class="normativity__eyebrow"> MARCO NORMATIVO </span>
+
+              <h3>
+                Norma Oficial Mexicana
+                <span>NOM-220-SSA1-2016</span>
+              </h3>
+
+              <p class="normativity__law-subtitle">
+                Instalación y operación de la farmacovigilancia
+              </p>
+
+              <p>
+                Establece disposiciones para la operación de la
+                farmacovigilancia en México, incluyendo la identificación,
+                evaluación y notificación de sospechas de reacciones adversas y
+                otros problemas de seguridad.
+              </p>
+
+              <div class="normativity__law-note">
+                <strong>Antecedente normativo</strong>
+                <p>
+                  El material académico hace referencia a la NOM-220-SSA1-2002,
+                  una versión anterior sustituida por la NOM-220-SSA1-2016.
+                </p>
+              </div>
+            </div>
+
+            <div class="normativity__law-symbol" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 3v18" />
+                <path d="M5 7h14" />
+                <path d="m5 7-3 6h6L5 7Z" />
+                <path d="m19 7-3 6h6l-3-6Z" />
+                <path d="M8 21h8" />
+              </svg>
+            </div>
+          </article>
+
+          <!-- ¿QUIÉNES REPORTAN? -->
+          <div class="normativity__report">
+            <div class="normativity__block-heading">
+              <span class="normativity__eyebrow"> PARTICIPACIÓN </span>
+              <h3>¿Quiénes pueden reportar?</h3>
+              <p>
+                La vigilancia de la seguridad de los medicamentos involucra a
+                distintos participantes del sistema sanitario.
+              </p>
+            </div>
+
+            <div class="normativity__report-grid">
+              <div class="normativity__report-item">
+                <span aria-hidden="true">01</span>
+                <strong>Profesionales de la salud</strong>
+              </div>
+              <div class="normativity__report-item">
+                <span aria-hidden="true">02</span>
+                <strong>Instituciones de salud</strong>
+              </div>
+              <div class="normativity__report-item">
+                <span aria-hidden="true">03</span>
+                <strong>Laboratorios y comercializadores</strong>
+              </div>
+              <div class="normativity__report-item">
+                <span aria-hidden="true">04</span>
+                <strong>Unidades clínicas</strong>
+              </div>
+              <div class="normativity__report-item">
+                <span aria-hidden="true">05</span>
+                <strong>Pacientes</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- SEVERIDAD -->
+          <div class="normativity__severity">
+            <div class="normativity__block-heading">
+              <span class="normativity__eyebrow"> REACCIONES ADVERSAS </span>
+
+              <h3>Severidad de las RAM</h3>
+
+              <p>
+                El material académico presenta cuatro niveles para explicar las
+                posibles consecuencias de una reacción adversa.
+              </p>
+            </div>
+
+            <div class="severity__grid">
+              <article class="severity__card severity__card--mild">
+                <span class="severity__level">01 / LEVE</span>
+                <h4>Leve</h4>
+                <p>
+                  Reacción tolerable que no requiere tratamiento específico.
+                </p>
+              </article>
+
+              <article class="severity__card severity__card--moderate">
+                <span class="severity__level">02 / MODERADA</span>
+                <h4>Moderada</h4>
+                <p>Afecta las actividades habituales y requiere tratamiento.</p>
+              </article>
+
+              <article class="severity__card severity__card--severe">
+                <span class="severity__level">03 / GRAVE</span>
+                <h4>Grave</h4>
+                <p>
+                  Puede comprometer la vida, requerir hospitalización o provocar
+                  discapacidad o malformaciones.
+                </p>
+              </article>
+
+              <article class="severity__card severity__card--fatal">
+                <span class="severity__level">04 / LETAL</span>
+                <h4>Letal</h4>
+                <p>La reacción contribuye al fallecimiento del paciente.</p>
+              </article>
+            </div>
+
+            <p class="normativity__clarification">
+              Nota: esta clasificación reproduce el enfoque didáctico del
+              material. Para reportes oficiales deben utilizarse las
+              definiciones y criterios de la normativa aplicable.
+            </p>
+          </div>
+
+          <!-- DETECCIÓN DE RAM -->
+          <div class="normativity__detection">
+            <div class="normativity__detection-content">
+              <span class="normativity__eyebrow">
+                IDENTIFICACIÓN TEMPRANA
+              </span>
+
+              <h3>
+                Detección de Reacciones Adversas a Medicamentos
+                <span>(RAM)</span>
+              </h3>
+
+              <p>
+                Es el proceso de identificar síntomas o alteraciones clínicas no
+                deseadas asociadas al uso de un medicamento en dosis habituales.
+              </p>
+
+              <p>
+                Su detección permite actuar oportunamente, valorar ajustes,
+                suspensión o sustitución del tratamiento bajo supervisión
+                profesional y prevenir complicaciones.
+              </p>
+
+              <p>
+                Además, contribuye a que las autoridades sanitarias identifiquen
+                riesgos nuevos, raros o poco frecuentes.
+              </p>
+            </div>
+
+            <div class="normativity__detection-highlight">
+              <span class="normativity__detection-plus" aria-hidden="true"
+                >+</span
+              >
+
+              <h4>¿Por qué es importante?</h4>
+
+              <p>
+                Porque identificar oportunamente una posible reacción adversa
+                contribuye a proteger la seguridad del paciente y mejorar el
+                conocimiento sobre los medicamentos.
+              </p>
+            </div>
+          </div>
+
+          <!-- MÉTODOS -->
+          <div class="normativity__methods">
+            <div class="normativity__block-heading">
+              <span class="normativity__eyebrow"> MÉTODOS DE DETECCIÓN </span>
+              <h3>¿Cómo se identifican las RAM?</h3>
+            </div>
+
+            <div class="normativity__methods-grid">
+              <article class="method__card">
+                <span class="method__number">01</span>
+                <h4>Vigilancia pasiva</h4>
+                <p>
+                  Recepción de notificaciones espontáneas realizadas por
+                  profesionales de la salud y pacientes.
+                </p>
+              </article>
+
+              <article class="method__card">
+                <span class="method__number">02</span>
+                <h4>Vigilancia activa</h4>
+                <p>
+                  Búsqueda intencionada de eventos mediante seguimiento
+                  sistemático, registros hospitalarios y estudios.
+                </p>
+              </article>
+
+              <article class="method__card">
+                <span class="method__number">03</span>
+                <h4>Análisis de datos</h4>
+                <p>
+                  Revisión de información recopilada para identificar patrones y
+                  posibles señales de seguridad.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <!-- GLOSARIO -->
+          <div class="normativity__glossary">
+            <div class="normativity__block-heading">
+              <span class="normativity__eyebrow"> CONSULTA RÁPIDA </span>
+
+              <h3>Glosario esencial</h3>
+
+              <p>Selecciona cada concepto para consultar su definición.</p>
+            </div>
+
+            <div class="glossary">
+              <details class="glossary__item" open>
+                <summary>
+                  <span>
+                    <strong>RAM</strong>
+                    Reacción Adversa a un Medicamento
+                  </span>
+                  <span class="glossary__indicator" aria-hidden="true"></span>
+                </summary>
+                <div class="glossary__answer">
+                  Cualquier respuesta nociva y no intencionada a un medicamento,
+                  presentada a dosis normalmente utilizadas en seres humanos
+                  para prevenir, diagnosticar o tratar enfermedades, o modificar
+                  funciones fisiológicas. Implica una relación causal al menos
+                  posible.
+                </div>
+              </details>
+
+              <details class="glossary__item">
+                <summary>
+                  <span>
+                    <strong>Farmacovigilancia pasiva</strong>
+                    Notificación espontánea
+                  </span>
+                  <span class="glossary__indicator" aria-hidden="true"></span>
+                </summary>
+                <div class="glossary__answer">
+                  Depende de que profesionales de la salud y pacientes reporten
+                  voluntariamente los casos observados.
+                </div>
+              </details>
+
+              <details class="glossary__item">
+                <summary>
+                  <span>
+                    <strong>Farmacovigilancia activa</strong>
+                    Vigilancia intensiva
+                  </span>
+                  <span class="glossary__indicator" aria-hidden="true"></span>
+                </summary>
+                <div class="glossary__answer">
+                  Busca intencionadamente eventos mediante seguimiento
+                  sistemático de cohortes, registros hospitalarios o estudios
+                  posteriores a la autorización.
+                </div>
+              </details>
+
+              <details class="glossary__item">
+                <summary>
+                  <span>
+                    <strong>EA</strong>
+                    Evento Adverso
+                  </span>
+                  <span class="glossary__indicator" aria-hidden="true"></span>
+                </summary>
+                <div class="glossary__answer">
+                  Cualquier suceso médico indeseable que puede presentarse
+                  durante la administración de un medicamento o vacuna, sin que
+                  necesariamente exista una relación causal.
+                </div>
+              </details>
+
+              <details class="glossary__item">
+                <summary>
+                  <span>
+                    <strong>SRAM</strong>
+                    Sospecha de Reacción Adversa
+                  </span>
+                  <span class="glossary__indicator" aria-hidden="true"></span>
+                </summary>
+                <div class="glossary__answer">
+                  Manifestación clínica o de laboratorio no deseada que aparece
+                  después de administrar uno o más medicamentos.
+                </div>
+              </details>
+
+              <details class="glossary__item">
+                <summary>
+                  <span>
+                    <strong>CNFV</strong>
+                    Centro Nacional de Farmacovigilancia
+                  </span>
+                  <span class="glossary__indicator" aria-hidden="true"></span>
+                </summary>
+                <div class="glossary__answer">
+                  Área de la Comisión de Evidencia y Manejo de Riesgos
+                  encargada, conforme a la normativa aplicable, de emitir
+                  políticas y lineamientos para la operación de la
+                  farmacovigilancia en México.
+                </div>
+              </details>
+
+              <details class="glossary__item">
+                <summary>
+                  <span>
+                    <strong>ESAVI</strong>
+                    Evento Supuestamente Atribuible a la Vacunación o
+                    Inmunización
+                  </span>
+                  <span class="glossary__indicator" aria-hidden="true"></span>
+                </summary>
+                <div class="glossary__answer">
+                  Manifestación clínica o evento médico que ocurre después de la
+                  vacunación y se considera supuestamente atribuible a ella. La
+                  relación temporal no demuestra causalidad automáticamente y
+                  requiere investigación.
+                </div>
+              </details>
+            </div>
+          </div>
+
+          <!-- CIERRE -->
+          <div class="normativity__closing">
+            <span>LA SEGURIDAD ES RESPONSABILIDAD COMPARTIDA</span>
+
+            <h3>Identificar, reportar y prevenir también es cuidar.</h3>
+
+            <p>
+              La farmacovigilancia contribuye a un uso más seguro de los
+              medicamentos y a la protección de la salud pública.
+            </p>
+
+            <a
+              href="https://www.gob.mx/cofepris"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="normativity__closing-link"
+            >
+              Consultar COFEPRIS
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========================================
+     FOOTER INSTITUCIONAL
+========================================= -->
+    <footer class="footer" id="footer">
+      <div class="footer__container">
+        <!-- CONTENIDO PRINCIPAL -->
+        <div class="footer__main">
+          <!-- IDENTIDAD INSTITUCIONAL -->
+          <div class="footer__brand">
+            <a href="#inicio" class="footer__identity">
+              <div class="footer__logo">
+                <img
+                  src="assets/ipn-logo.png"
+                  alt="Escudo del Instituto Politécnico Nacional"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="footer__identity-text">
+                <strong>Farmacovigilancia</strong>
+                <span>Instituto Politécnico Nacional</span>
+                <span>CICS Unidad Milpa Alta</span>
+              </div>
+            </a>
+
+            <p class="footer__description">
+              Un espacio académico dedicado a comprender la importancia de la
+              farmacovigilancia, la detección de reacciones adversas y la
+              seguridad de los pacientes.
+            </p>
+
+            <div class="footer__academic-tag">
+              <span class="footer__academic-dot"></span>
+              Proyecto académico · Equipo 5
+            </div>
+          </div>
+
+          <!-- FUENTES OFICIALES -->
+          <div class="footer__column">
+            <h3>Fuentes oficiales</h3>
+
+            <ul class="footer__links">
+              <li>
+                <a
+                  href="https://www.gob.mx/cofepris"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Portal COFEPRIS
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.gob.mx/cofepris/acciones-y-programas/farmacovigilancia-73541"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Farmacovigilancia en México
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DIVISOR -->
+        <div class="footer__divider"></div>
+
+        <!-- CRÉDITOS INFERIORES -->
+        <div class="footer__bottom">
+          <div class="footer__credits">
+            <strong> Instituto Politécnico Nacional </strong>
+
+            <span>
+              Centro Interdisciplinario de Ciencias de la Salud · Unidad Milpa
+              Alta
+            </span>
+
+            <span> Material educativo elaborado por el Equipo 5. </span>
+          </div>
+
+          <div class="footer__year">
+            <span>2026</span>
+            <span>Uso académico</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTÓN VOLVER AL INICIO -->
+      <a
+        href="#inicio"
+        class="footer__back-top"
+        aria-label="Volver al inicio de la página"
+        title="Volver al inicio"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="m6 15 6-6 6 6"></path>
+        </svg>
+      </a>
+    </footer>
+  </body>
+</html>
